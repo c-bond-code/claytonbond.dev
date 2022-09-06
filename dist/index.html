@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Clayton Bond</title>
+  <link rel="icon" href="/icon.9fca24d7.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="Get more info about Clayton Bond.">
+  <link rel="stylesheet" href="/index.3a01df49.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+
+<body>
+  <main id="swup" class="transition-fade">
+  <canvas class="orb-canvas"></canvas>
+  
+  <div class="container overlay">
+
+    <!-- NavBar ---------------------------------------------------------------------------->
+    <div class="row navbarstyle">
+      <div class="col-md-1">
+        <a href="/index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="var(--dark-color)" class="bi bi-body-text padlogo" viewbox="0 0 16 16">
+          <path fill-rule="evenodd" d="M0 .5A.5.5 0 0 1 .5 0h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 0 .5Zm0 2A.5.5 0 0 1 .5 2h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5Zm9 0a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5Zm-9 2A.5.5 0 0 1 .5 4h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5Zm5 0a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5Zm7 0a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5Zm-12 2A.5.5 0 0 1 .5 6h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5Zm8 0a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5Zm-8 2A.5.5 0 0 1 .5 8h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5Zm7 0a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5Zm-7 2a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1h-8a.5.5 0 0 1-.5-.5Zm0 2a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5Zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Z"></path>
+        </svg>
+        </a>
+      </div>
+
+      <div class="offset-md-7 col-md-4">
+        <div class="row d-flex justify-content-center">
+  
+          <div class="row">
+            <div class="col-md-12">
+              <a class="navbar-brand navoverlay" href="#projects"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-code-slash pad" viewbox="0 0 16 16">
+                <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+              </svg>Projects</a>
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="col-md-12">
+              <a class="navbar-brand navoverlay" href="#about"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-blockquote-left pad" viewbox="0 0 16 16">
+                <path d="M2.5 3a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1h-11zm5 3a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6zm0 3a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6zm-5 3a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1h-11zm.79-5.373c.112-.078.26-.17.444-.275L3.524 6c-.122.074-.272.17-.452.287-.18.117-.35.26-.51.428a2.425 2.425 0 0 0-.398.562c-.11.207-.164.438-.164.692 0 .36.072.65.217.873.144.219.385.328.72.328.215 0 .383-.07.504-.211a.697.697 0 0 0 .188-.463c0-.23-.07-.404-.211-.521-.137-.121-.326-.182-.568-.182h-.282c.024-.203.065-.37.123-.498a1.38 1.38 0 0 1 .252-.37 1.94 1.94 0 0 1 .346-.298zm2.167 0c.113-.078.262-.17.445-.275L5.692 6c-.122.074-.272.17-.452.287-.18.117-.35.26-.51.428a2.425 2.425 0 0 0-.398.562c-.11.207-.164.438-.164.692 0 .36.072.65.217.873.144.219.385.328.72.328.215 0 .383-.07.504-.211a.697.697 0 0 0 .188-.463c0-.23-.07-.404-.211-.521-.137-.121-.326-.182-.568-.182h-.282a1.75 1.75 0 0 1 .118-.492c.058-.13.144-.254.257-.375a1.94 1.94 0 0 1 .346-.3z"></path>
+              </svg>About</a>
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="col-md-12">
+              <a class="navbar-brand navoverlay" href="#contact"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-envelope pad" viewbox="0 0 16 16">
+                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"></path>
+              </svg>Contact</a>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+    
+    
+
+    <!-- Header ---------------------------------------------------------------------------->
+    <div class="row">
+      <div class="col-md-12 paddingbuffer text-center">
+        <h1 style="font-family: Sand_Dunes; font-size: 52px" id="header-description">Clayton Bond</h1> <br>
+        <div class="offset-md-3 col-md-6">
+          <h6 style="padding-bottom: 1rem">Thanks for stopping by, I'm a SysAdmin and Full Stack Developer. Feel free to poke around 👉</h6>
+          <button class="overlay__btn overlay__btn--colors">
+            <span>Change Color</span>
+            <span class="overlay__btn-emoji"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-eyedropper" viewbox="0 0 16 16">
+              <path d="M13.354.646a1.207 1.207 0 0 0-1.708 0L8.5 3.793l-.646-.647a.5.5 0 1 0-.708.708L8.293 5l-7.147 7.146A.5.5 0 0 0 1 12.5v1.793l-.854.853a.5.5 0 1 0 .708.707L1.707 15H3.5a.5.5 0 0 0 .354-.146L11 7.707l1.146 1.147a.5.5 0 0 0 .708-.708l-.647-.646 3.147-3.146a1.207 1.207 0 0 0 0-1.708l-2-2zM2 12.707l7-7L10.293 7l-7 7H2v-1.293z"></path>
+            </svg></span>
+          </button>
+        </div>
+      </div>
+    </div> <!-- End of Header Row -->
+
+    <!-- Projects ---------------------------------------------------------------------------->
+    <div class="row" id="projects">
+      <div class="offset-md-2 col-md-8">
+        <h4 class="mobile section">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-code-slash pad" viewbox="0 0 16 16">
+            <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+          </svg> Projects 
+        </h4><hr>
+      <div class="row">
+          <!-- Duplicate to add more projects-->
+          <div class="col-md-6 animate">
+            <a data-toggle="modal" data-target=".User_Mangement" style="color: #000">
+              <div class="project col-md-12">
+                <img class="images" src="/User%20Management%20System.d3d8fafe.gif" alt=""><br>
+                <b><i>User Management System</i></b>
+                <p>User management using <span class="text-gradient"> LAMP</span> stack</p>
+              </div>
+            </a>
+          </div>
+
+      </div>
+    </div> <!-- End Projects Row-->
+
+    <!-- About ---------------------------------------------------------------------------->
+    <div class="row" id="about">
+      <div class="offset-md-2 col-md-8">
+        <h4 class="mobile section">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-blockquote-left pad" viewbox="0 0 16 16">
+            <path d="M2.5 3a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1h-11zm5 3a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6zm0 3a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6zm-5 3a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1h-11zm.79-5.373c.112-.078.26-.17.444-.275L3.524 6c-.122.074-.272.17-.452.287-.18.117-.35.26-.51.428a2.425 2.425 0 0 0-.398.562c-.11.207-.164.438-.164.692 0 .36.072.65.217.873.144.219.385.328.72.328.215 0 .383-.07.504-.211a.697.697 0 0 0 .188-.463c0-.23-.07-.404-.211-.521-.137-.121-.326-.182-.568-.182h-.282c.024-.203.065-.37.123-.498a1.38 1.38 0 0 1 .252-.37 1.94 1.94 0 0 1 .346-.298zm2.167 0c.113-.078.262-.17.445-.275L5.692 6c-.122.074-.272.17-.452.287-.18.117-.35.26-.51.428a2.425 2.425 0 0 0-.398.562c-.11.207-.164.438-.164.692 0 .36.072.65.217.873.144.219.385.328.72.328.215 0 .383-.07.504-.211a.697.697 0 0 0 .188-.463c0-.23-.07-.404-.211-.521-.137-.121-.326-.182-.568-.182h-.282a1.75 1.75 0 0 1 .118-.492c.058-.13.144-.254.257-.375a1.94 1.94 0 0 1 .346-.3z"></path>
+          </svg>About
+        </h4><hr>
+
+
+        
+        <!-- Duplicate to add more about me -->
+        <div class="row rowspace"> 
+          <div class="offset-md-1 col-md-8 aboutme mobile">
+            <p>When I turned 16, I attained my certification as a <a href="https://www.comptia.org/certifications/a" target="_blank"><span class="text-gradient">CompTIA A+ Technician</span></a>. 
+              This really kickstarted my love of the field and shaped my direction going forward. </p>
+          </div>
+          <div class="col-md-2">
+            <a href="https://www.comptia.org/certifications/a" target="_blank">
+              <img class="logo" src="/comptialogo.98b3ee44.png" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="row rowspace">
+          <div class="offset-md-1 col-md-2">
+            <a href="https://uafs.edu/" target="_blank">
+              <img class="logo" src="/University_of_Arkansas–Fort_Smith_seal.svg.7669aaf0.png" alt="">
+            </a>
+          </div>
+          <div class="col-md-8 aboutme mobile">
+            <p>In 2016 I began studying <a href="https://mackey.cs.uafs.edu/analytics.php" target="_blank"><span class="text-gradient">Data Analytics</span></a> at the <a href="https://uafs.edu/" target="_blank"><span class="text-gradient"> University of Arkansas Fort Smith</span></a>. 
+            I graduated in 2020 and achieved the Data Analytics award in 2019 during my senior year. 
+            While enrolled, I interned at Rheem Manufacturing with their I.T. department.</p>
+          </div>
+        </div>
+
+        <div class="row rowspace">
+          <div class="offset-md-1 col-md-8 aboutme mobile">
+            <p>In June of 2020 I started working for <a href="https://megaphonepro.com/" target="_blank"><span class="text-gradient">Megaphone Pro Solutions</span></a> as the head of their I.T. department.
+            I've been able to work with a variety of different clients like 911 Dispatch, Home Health Services, CPAs, and County Abstractors.</p>
+          </div>
+          <div class="col-md-2">
+            <a href="https://megaphonepro.com/" target="_blank">
+              <img class="logo" src="/megaphonelogo.1830d5cf.webp" alt="">
+            </a>
+          </div>
+        </div>        
+
+      </div>
+    </div> <!-- End About Me Row-->
+
+
+    <!-- Contact ---------------------------------------------------------------------------->
+    <div class="offset-md-2 col-md-8" id="contact">
+      <h4 class="mobile section">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-envelope pad" viewbox="0 0 16 16">
+          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"></path>
+        </svg>Contact
+      </h4><hr>
+
+      <div class="row">
+
+          <!-- Text ---------------------------------------------------------------------------->
+          <div class="row rowspace form-group">
+            <div class="offset-md-1 col-md-8">
+              <form action="twilioText/text.php" method="POST">
+                <h4>Shoot me a Text:</h4>
+                <input class="textareaformat" placeholder="Your Phone Number #" type="number" name="txtNum" required="">
+                <small>Enter your number above for a text back!</small><br>
+                <input class="textareaformat" placeholder="Hey man, Love the site!" type="textarea" name="txtMsg" id="" required="">
+                <small>
+                  Message, let me know who you are
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-person-lines-fill" viewbox="0 0 16 16">
+                    <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z"></path>
+                  </svg>
+                </small>
+                <button class="overlay__btn overlay__btn--colors hideonfull" type="submit">Send</button>
+              </form>
+            </div>
+            <div class="d-none d-md-block col-md-2 scalesvg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="url(#grad1)" class="bi bi-chat-dots" viewbox="0 0 16 16">
+                <defs>
+                  <lineargradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color: hsl(var(--hue-complimentary1), 95%, 50%); stop-opacity: 1"></stop>
+                    <stop offset="100%" style="stop-color: hsl(var(--hue), 80%, 40%); stop-opacity: 1"></stop>
+                  </lineargradient>
+                </defs>
+                <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"></path>
+                <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z"></path>
+              </svg>
+            </div>
+          </div>  
+
+          <!-- Email ---------------------------------------------------------------------------->
+          <div class="row rowspace form-group">
+            <div class="d-none d-md-block offset-md-1 col-md-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="url(#grad1)" class="bi bi-envelope-paper" viewbox="0 0 16 16">
+                <defs>
+                  <lineargradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color: hsl(var(--hue-complimentary1), 95%, 50%); stop-opacity: 1"></stop>
+                    <stop offset="100%" style="stop-color: hsl(var(--hue), 80%, 40%); stop-opacity: 1"></stop>
+                  </lineargradient>
+                </defs>
+                <path d="M4 0a2 2 0 0 0-2 2v1.133l-.941.502A2 2 0 0 0 0 5.4V14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V5.4a2 2 0 0 0-1.059-1.765L14 3.133V2a2 2 0 0 0-2-2H4Zm10 4.267.47.25A1 1 0 0 1 15 5.4v.817l-1 .6v-2.55Zm-1 3.15-3.75 2.25L8 8.917l-1.25.75L3 7.417V2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v5.417Zm-11-.6-1-.6V5.4a1 1 0 0 1 .53-.882L2 4.267v2.55Zm13 .566v5.734l-4.778-2.867L15 7.383Zm-.035 6.88A1 1 0 0 1 14 15H2a1 1 0 0 1-.965-.738L8 10.083l6.965 4.18ZM1 13.116V7.383l4.778 2.867L1 13.117Z"></path>
+              </svg>
+            </div>
+            <div class="col-md-8">
+              <form action="phpmailer/mail.php" method="POST">
+                <h4>Send me an Email:</h4>
+                <input class="textareaformat" placeholder="Example@Example.com" type="email" name="txtEmail" id="" required="">
+                <small>Enter your email and I'll get back to you as soon I can!</small>
+                <input class="textareaformat" placeholder="Email me directly at bond.clayton00@gmail.com" type="textarea" name="txtBody" id="" required="">
+                <small>
+                  Message, let me know who you are
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-person-lines-fill" viewbox="0 0 16 16">
+                    <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z"></path>
+                  </svg>
+                </small>
+                <button class="overlay__btn overlay__btn--colors hideonfull" type="submit">Send</button>
+              </form>
+            </div>
+          </div> 
+
+
+      </div> <!-- End of Row-->
+
+    </div> <!-- End of Contact-->
+
+  </div> <!-- End of Container-->
+
+
+  <!-- Modals ---------------------------------------------------------------------------->
+  <div class="modal fade bd-example-modal-lg User_Mangement" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        
+        <div class="offset-md-1 col-md-10" style="padding-top: 10%">
+          <h4>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person-lines-fill pad modalTitle" viewbox="0 0 16 16">
+              <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z"></path>
+            </svg>
+            User Management System
+          </h4>
+          <p>Simple user management using <span class="text-gradient"> Linux, Apache, MySQL</span> and <span class="text-gradient">PHP</span></p>
+          <a href="https://claytonbond.dev/UserManagement" target="_blank">
+          <img class="images" src="/User%20Management%20System.d3d8fafe.gif" alt=""></a>
+          <br>
+        </div>
+
+        <div class="offset-md-1 col-md-10 modalinvite">
+
+          <p style="padding-top: 20px">
+            <span class="text-gradient"><a href="https://claytonbond.dev/UserManagement" target="_blank">Link to the Project</a></span> 
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewbox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
+            </svg>
+            <br>
+            Sign in and test it out with the bellow Teacher account.
+            <br>
+            Username: <span class="text-gradient">temp0</span> 
+            Password: <span class="text-gradient">Password123</span> 
+          </p>
+
+        </div>
+
+        <div class="offset-md-1 col-md-10" style="padding-bottom: 10%">
+          <h4 class="mobile section" style="padding-top: 50px">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-blockquote-left pad" viewbox="0 0 16 16">
+              <path d="M2.5 3a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1h-11zm5 3a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6zm0 3a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6zm-5 3a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1h-11zm.79-5.373c.112-.078.26-.17.444-.275L3.524 6c-.122.074-.272.17-.452.287-.18.117-.35.26-.51.428a2.425 2.425 0 0 0-.398.562c-.11.207-.164.438-.164.692 0 .36.072.65.217.873.144.219.385.328.72.328.215 0 .383-.07.504-.211a.697.697 0 0 0 .188-.463c0-.23-.07-.404-.211-.521-.137-.121-.326-.182-.568-.182h-.282c.024-.203.065-.37.123-.498a1.38 1.38 0 0 1 .252-.37 1.94 1.94 0 0 1 .346-.298zm2.167 0c.113-.078.262-.17.445-.275L5.692 6c-.122.074-.272.17-.452.287-.18.117-.35.26-.51.428a2.425 2.425 0 0 0-.398.562c-.11.207-.164.438-.164.692 0 .36.072.65.217.873.144.219.385.328.72.328.215 0 .383-.07.504-.211a.697.697 0 0 0 .188-.463c0-.23-.07-.404-.211-.521-.137-.121-.326-.182-.568-.182h-.282a1.75 1.75 0 0 1 .118-.492c.058-.13.144-.254.257-.375a1.94 1.94 0 0 1 .346-.3z"></path>
+            </svg>About This Project
+          </h4><hr>
+          <p>
+            This is a simple implementation of a <a href="https://getbootstrap.com/" target="_blank"><span style="color: #563d7c">Bootstrap</span></a> Front-End hosted on <a href="https://httpd.apache.org/" target="_blank"><span style="color: #aa0101">Apache</span></a>. It securely interacts with SHA256 to a <a href="https://www.mysql.com/" target="_blank"><span style="color: #4379a1">MySQL</span></a> backend, hosted through a <a href="https://www.docker.com/" target="_blank"><span style="color: #119fdb">Docker</span></a> container.
+          </p>
+          <p>
+            Allows any user with appropriate permissions (Teachers) to view, edit, update, create and delete users. Anyone without permission (Students) can still view users, but edit options will be hidden to them. 
+          </p>
+
+          <img class="images" src="/Flowcharts.b048daa9.png" alt="" style="width: 80%; height: 80%">
+
+          <h4 class="mobile section" style="padding-top: 50px">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-info-circle pad" viewbox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+              <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"></path>
+            </svg>Note
+          </h4><hr>
+          <p>
+            There are several thousand students and a few hundred professors. Feel free to interact and mess around however you see fit. This is public, so there may be some weird edits by other users. If you notice things are messed up, or you can't login, just reach out and I can reset the database.
+          </p>
+          <div class="text-center" style="padding: 2rem">
+            <button type="button" data-dismiss="modal" class="overlay__btn overlay__btn--colors">
+              <span>Close</span>
+            </button>
+          </div>
+        </div>
+
+        
+
+      </div>
+    </div>
+  </div>
+  </div>
+  </main>
+</body>
+
+<script src="/index.ab76bbdc.js"></script>
+<script src="/index.3af44b34.js" defer=""></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</html>
+
+
+
+

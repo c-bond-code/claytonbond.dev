@@ -1,0 +1,25 @@
+{
+  "name": "project-folder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-jsonld": "^2.6.0",
+    "parcel": "^2.6.0",
+    "querystring-es3": "^0.2.1"
+  },
+  "dependencies": {
+    "@pixi/filter-kawase-blur": "^4.1.5",
+    "debounce": "^1.2.1",
+    "hsl-to-hex": "^1.0.0",
+    "pixi.js": "^6.3.0",
+    "simplex-noise": "^3.0.1",
+    "swup": "^2.0.19"
+  }
+}

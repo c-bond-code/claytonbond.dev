@@ -1,0 +1,13 @@
+{
+    "name": "package/test",
+    "description": "testphp",
+    "type": "project",
+    "require": {
+        "twilio/sdk": "^6.37"
+    },
+    "autoload": {
+        "psr-4": {
+            "Package\\Test\\": "src/"
+        }
+    }
+}
